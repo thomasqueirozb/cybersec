@@ -10,9 +10,9 @@ services:
       MYSQL_PASSWORD: examplepass
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
-      - db:/var/lib/mysql
+      - db_vol:/var/lib/mysql
     ports:
       - "3306:3306"
 
 volumes:
-  db:
+  db_vol:
