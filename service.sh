@@ -90,5 +90,5 @@ echo "Enabling & starting $SERVICENAME"
 
 # Autostart systemd service
 systemctl enable "$SERVICENAME.service"
-# Start systemd service now
-systemctl start "$SERVICENAME.service"
+# Start systemd service now or restart if already running
+systemctl restart "$SERVICENAME.service"
