@@ -32,6 +32,7 @@ if [ "$?" = "1" ]; then
         docker_compose_cmd="$(which docker) compose"
     else
         >&2 echo "Docker compose not installed"
+        exit 3
     fi
 fi
 
