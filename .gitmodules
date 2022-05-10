@@ -1,0 +1,4 @@
+[submodule "wazuh-docker"]
+	path = wazuh-docker
+	url = https://github.com/wazuh/wazuh-docker.git
+	branch = 2c848fb3e196b60ebbf162993529317a084f7658
