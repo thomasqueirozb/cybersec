@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+  openvas:
+    image: immauss/openvas
+    restart: always
+    environment:
+      PASSWORD: examplepass
+    volumes:
+      - db_vol:/var/lib/postgresql/data
+      - openvas_vol:/data
+    ports:
+      - "8080"
+
+volumes:
+  db_vol:
+  openvas_vol:
